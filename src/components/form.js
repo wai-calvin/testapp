@@ -1,21 +1,23 @@
 import React, {Component} from 'react';
 
 class Form extends Component {
-    constructor(props) {
-        super();
-    }
+  constructor(props) {
+    super(props);
+
+
+  }
+
 
   render() {
     return (
       <div>
-        <h1>Hello, {this.props.name}</h1>
-        {/* <form>
+        <form>
             <label>
-                Name:
+                How Many Players?
                 <input type="text" name="name" />
             </label>
-            <input type="submit" value="Submit" />
-        </form> */}
+            <input type="submit" value="Submit" onClick={this.handleSubmit} />
+        </form>
       </div>
     );
   }
